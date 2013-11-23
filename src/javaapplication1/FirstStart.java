@@ -1,29 +1,33 @@
 package javaapplication1;
 //@author Asya Toskova
 
-import java.util.Scanner;
 public class FirstStart {
 
-    public static void main(String[] args){
-        
-       Scanner scn = new Scanner(System.in); 
-       // System.out.print("Въведи № на лабораторно занятие -> ");
-        //int laboratory = scn.nextInt();
-         int laboratory = 2;
-        switch(laboratory){
+    public static void main(String[] args) {
+        play(5,2);
+    }
+    public static void play(int a ,int b) {
+         switch(a){
            case 1:
-                Lab1.Choose();
+                Lab1.Choose(b);
                break;
             case 2:
-                Lab2.Choose();
+                Lab2.Choose(b);
                 break;
             case 3:
-                Zadachi_SvNakov.Choose();
+                Zadachi_SvNakov.Choose(b);
+                break;
+            case 4:
+                Lab2_Home.Choose(b);
+            case 5:
+                Upr1_architekturi.Choose(b);
+               
                 break;
             default: 
-                 System.out.print("Error!");
-                break;
+                 System.out.println("Error!");
+               
         }
-       
     }
+      
+       
 }

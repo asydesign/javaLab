@@ -5,12 +5,8 @@ import java.util.Scanner;
 
 public class Lab2 {
 
-    public static void Choose() {
-        Scanner scn = new Scanner(System.in);
-        //System.out.print("Въведи № на задачата -> ");
-
-        // = scn.nextInt();
-        int zadacha = 14;
+    public static void Choose(int zadacha) {
+      
         switch (zadacha) {
             
                     

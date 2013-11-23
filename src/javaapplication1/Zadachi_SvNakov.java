@@ -5,12 +5,8 @@ import java.util.Scanner;
 
 
 public class Zadachi_SvNakov {
-    public static void Choose(){
-        Scanner scn = new Scanner(System.in); 
-//        System.out.print("Въведи № на задачата -> ");
-//        int zadacha = scn.nextInt();
-         
-        switch(4){
+    public static void Choose(int zadacha){
+       switch(zadacha){
             case 1:
                 myMetod1();
                 break;

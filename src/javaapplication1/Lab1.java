@@ -2,10 +2,7 @@ package javaapplication1;
 import java.util.Scanner;
 
 public class Lab1 {
-    public static void Choose(){
-        Scanner scn = new Scanner(System.in); 
-        System.out.print("Въведи № на задачата -> ");
-        int zadacha = scn.nextInt();
+    public static void Choose(int zadacha){
         
         switch(zadacha){
             case 1:
