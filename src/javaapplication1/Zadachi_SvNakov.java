@@ -7,10 +7,10 @@ import java.util.Scanner;
 public class Zadachi_SvNakov {
     public static void Choose(){
         Scanner scn = new Scanner(System.in); 
-        System.out.print("Въведи № на задачата -> ");
-        int zadacha = scn.nextInt();
-        
-        switch(zadacha){
+//        System.out.print("Въведи № на задачата -> ");
+//        int zadacha = scn.nextInt();
+         
+        switch(4){
             case 1:
                 myMetod1();
                 break;
@@ -21,7 +21,7 @@ public class Zadachi_SvNakov {
                 myMetod3();
                 break;
             case 4:
-                //myMetod4();
+                myMetod4();
                 break;
             case 5:
                 //myMetod5();
@@ -89,5 +89,18 @@ public class Zadachi_SvNakov {
             }    
             System.out.print(b);
     }
-
+    public static void myMetod4(){
+//    Напишете израз, който да проверява дали дадено цяло число съдържа 7 
+    //за трета цифра (отдясно на ляво).
+        String i;
+        Scanner scn = new Scanner(System.in);
+        System.out.print("i=");
+        i = scn.next();
+       
+        if(i.matches("(.*)7(.*)") && i.indexOf( '7' )==2){
+            System.out.println("съдържа 7 на позиция 3");
+        }
+       
+    }
+//    Напишете израз, който да проверява дали третия бит на дадено число е 1 или 0.
 }
