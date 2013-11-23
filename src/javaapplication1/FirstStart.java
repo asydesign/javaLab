@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class FirstStart {
 
     public static void main(String[] args){
-       Scanner scn = new Scanner(System.in); 
-        System.out.print("Въведи № на лабораторно занятие -> ");
-        int laboratory = scn.nextInt();
         
+       Scanner scn = new Scanner(System.in); 
+       // System.out.print("Въведи № на лабораторно занятие -> ");
+        //int laboratory = scn.nextInt();
+         int laboratory = 2;
         switch(laboratory){
            case 1:
                 Lab1.Choose();
