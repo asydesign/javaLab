@@ -1,6 +1,7 @@
 package javaapplication1;
 import java.util.Scanner;
-
+import javax.swing.*; //awt
+//http://pastebin.com/u/wingman007
 
 public class Upr1_architekturi {
    
@@ -47,16 +48,31 @@ public class Upr1_architekturi {
         int s; 
         System.out.println("Въведи бройна система: ");
         s = KeyS.nextInt();
-        
-       String a="";
+       
+      
+       int[] a = new int[100];
        int k;
-       while (ns>=0){
-            //a = a*s + Integer.parseInt(String.valueOf(ns.charAt(i)));
-            ns = ns/s;
-            k = ns%s;
-            a = a.concat(Integer.toString(k));
-            System.out.println(ns);
+       int i=0;
+       String myBinary = " ";
+       int first_ns = ns;
+       
+       while ((ns-s)>=0){ 
+          ns = ns/s;
+           k = ns%s;
+                    System.out.println();    
+
+           a[i] = k;
+           i=i+1;
        }
-        //System.out.println("Числото в "+ s +"-ична с-ма е: " + a);
+       a[i]=ns;
+
+//      for(int j = i; j>=0; j--){ //a.length = 100
+//        
+//        myBinary = myBinary + a[j];
+//      }  
+//      
+//       System.out.println("Числото "+first_ns+" в "+ s +"-ична с-ма е: " + myBinary);
+       
+      
     }
 }

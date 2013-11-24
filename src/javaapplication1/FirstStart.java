@@ -15,10 +15,10 @@ public class FirstStart {
                 Lab2.Choose(b);
                 break;
             case 3:
-                Zadachi_SvNakov.Choose(b);
+                Lab3.Choose(b);
                 break;
             case 4:
-                Lab2_Home.Choose(b);
+                Zadachi_SvNakov.Choose(b);
             case 5:
                 Upr1_architekturi.Choose(b);
                
