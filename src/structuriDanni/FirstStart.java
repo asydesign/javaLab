@@ -1,11 +1,14 @@
-package javaapplication1;
+package structuriDanni;
 //@author Asya Toskova
+//import javax.swing.*; or awt - graphycs interface
+//http://pastebin.com/u/wingman007
 
 public class FirstStart {
 
     public static void main(String[] args) {
-        play(5,2);
+        play(4,7);
     }
+    
     public static void play(int a ,int b) {
          switch(a){
            case 1:
@@ -18,11 +21,15 @@ public class FirstStart {
                 Lab3.Choose(b);
                 break;
             case 4:
-                Zadachi_SvNakov.Choose(b);
-            case 5:
-                Upr1_architekturi.Choose(b);
-               
+                Lab4.Choose(b);
                 break;
+            case 5:
+                Zadachi_SvNakov.Choose(b);
+                break;
+            case 6:
+                Upr1_architekturi.Choose(b);
+                break;
+                
             default: 
                  System.out.println("Error!");
                

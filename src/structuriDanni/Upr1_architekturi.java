@@ -1,8 +1,6 @@
-package javaapplication1;
+package structuriDanni;
 
 import java.util.Scanner;
-import javax.swing.*; //or awt - graphycs interface
-//http://pastebin.com/u/wingman007
 
 public class Upr1_architekturi {
 
@@ -25,18 +23,19 @@ public class Upr1_architekturi {
 // преобразуване на числа в десетична бр. с-ма
         Scanner KeyS = new Scanner(System.in);
         String ns;
-        System.out.println("Въведи число: ");
+        System.out.print("Въведи число: ");
         ns = KeyS.nextLine();
 
         int s;
-        System.out.println("В каква бройна система е това число: ");
+        System.out.print("В каква бройна система е това число: ");
         s = KeyS.nextInt();
 
         int a = 0;
         for (int i = 0; i < ns.length(); i++) {
             a = a * s + Integer.parseInt(String.valueOf(ns.charAt(i)));
+
         }
-        System.out.println(s+"-ичното число в десетична с-ма е: " + a);
+        System.out.println(s + "-ичното число в десетична с-ма е: " + a);
     }
 
     public static void myMetod2() {
@@ -55,17 +54,16 @@ public class Upr1_architekturi {
         String myBinary = "";
         int first_ns = ns;
 
-        while (ns > (s-1)) {
+        while (ns > (s - 1)) {
             k = ns % s;
             ns = ns / s;
             a = a + Integer.toString(k);
 
         }
-        if ((ns <= (s-1))&&(ns>0)) {
+        if ((ns <= (s - 1)) && (ns > 0)) {
             k = ns;
         }
-        
-        
+
         a = a + Integer.toString(k);
         for (int i = a.length() - 1; i >= 0; i--) {
             myBinary = myBinary + a.charAt(i);
